@@ -20,8 +20,9 @@ $gender=$_POST['gender'];
 
 // Create Connection
 $conn = mysql_connect($servername,$username,$password);
-if(!$conn){
-die("Can not connect: ".mysql_error());
+if(!$conn)
+{
+	die("Can not connect: ".mysql_error());
 }
 
 mysql_select_db($dbname,$conn);
